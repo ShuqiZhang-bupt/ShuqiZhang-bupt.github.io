@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242424;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.page { max-width: 800px; margin: 0 auto; padding: 58px 28px 28px; }
+header { margin-bottom: 21px; }
+h1 { margin: 0 0 3px; font-size: 34px; font-weight: 500; line-height: 1.25; letter-spacing: -.6px; }
+.affiliation { margin: 9px 0 10px; color: #555; }
+a { color: #1b5686; text-decoration: none; text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #1b5686; outline-offset: 4px; border-radius: 1px; }
+.contact-links { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; }
+.contact-links a { padding: 4px 0; }
+.contact-links span { color: #a0a0a0; }
+section { margin: 0 0 30px; }
+h2 { margin: 0 0 11px; font-size: 21px; font-weight: 500; line-height: 1.4; }
+h3 { margin: 0 0 5px; font-size: 16px; font-weight: 700; line-height: 1.5; }
+p { margin: 0 0 12px; }
+section p:last-child { margin-bottom: 0; }
+.separator { display: inline-block; padding: 0 5px; color: #777; }
+.education-summary { margin-bottom: 8px; }
+.education-date { color: #555; font-size: 14px; }
+.academic-results { display: flex; flex-wrap: wrap; gap: 3px 22px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+.skills { list-style: none; margin: 0; padding: 0; }
+.skills li + li { margin-top: 3px; }
+.project-meta { margin: 0 0 2px; font-size: 14px; color: #555; }
+.project-meta span { padding: 0 4px; }
+.programme { margin-bottom: 14px; font-size: 14px; font-style: italic; color: #555; }
+.honor { display: flex; justify-content: space-between; align-items: baseline; gap: 22px; font-size: 15px; }
+.honor p { margin: 0; }
+.honor-detail { color: #555; }
+.year { color: #555; white-space: nowrap; font-size: 14px; }
+footer { margin-top: 39px; padding-top: 17px; border-top: 1px solid #e4e4e4; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 13px; color: #666; }
+.skip-link { position: absolute; top: -100px; left: 16px; background: white; padding: 8px 12px; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 560px) {
+  .page { padding: 34px 22px 24px; }
+  h1 { font-size: 30px; }
+  header { margin-bottom: 18px; }
+  section { margin-bottom: 27px; }
+  .honor { display: block; }
+  .year { display: block; margin-top: 4px; }
+  .contact-links { gap: 10px; }
+  .contact-links a { padding: 7px 0; }
+  footer { margin-top: 30px; }
+}
+@media print {
+  .page { max-width: none; padding: 0; }
+  a { color: inherit; }
+  header { margin-bottom: 20px; }
+  section { break-inside: avoid; margin-bottom: 20px; }
+  .skip-link { display: none; }
+}
